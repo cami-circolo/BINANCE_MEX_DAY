@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINANCE PIZZA DAY | Ciudad de México</title>
+    
+    <!-- Fuente Ubuntu: Única permitida para Circolo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --color-bone: #F9F8F6;
+            --color-gold: #d4af37;
+            --color-dark: #1a1a1a;
+            --color-text: #333333;
+        }
+
+        /* Reset general y eliminación estricta de cursivas */
+        * {
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif !important;
+            font-style: normal !important;
+        }
+
+        body {
+            background-color: var(--color-bone);
+            color: var(--color-text);
+            overflow-x: hidden;
+            line-height: 1.4;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: var(--color-dark);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            color: var(--color-dark);
+            text-transform: uppercase;
+        }
+
+        h3, h4 {
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        /* Estructura de Logos (Partnership Lockup) */
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .section-logo-lockup {
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-logo-lockup {
+            margin-bottom: 3.5rem;
+        }
+
+        .logo-circolo {
+            height: 28px;
+            opacity: 0.8;
+        }
+
+        .logo-binance {
+            height: 24px;
+        }
+
+        .hero-logo-circolo {
+            height: 90px;
+        }
+
+        .hero-logo-binance {
+            height: 65px;
+        }
+
+        .logo-divider {
+            width: 1px;
+            height: 20px;
+            background: rgba(0,0,0,0.15);
+        }
+
+        .hero-divider {
+            height: 60px;
+        }
+
+        /* Contenedores de Imagen */
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            border-radius: 2px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Estructura de Secciones Horizontales */
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 3rem 8%;
+            position: relative;
+        }
+
+        .rev-stamp {
+            font-size: 8px;
+            letter-spacing: 1px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        /* Tabla de Presupuesto */
+        .investment-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.75rem;
+        }
+        .investment-table th {
+            text-align: left;
+            padding: 0.8rem;
+            border-bottom: 1px solid var(--color-gold);
+            font-weight: 500;
+            color: var(--color-dark);
+            text-transform: uppercase;
+        }
+        .investment-table td {
+            padding: 0.5rem 0.8rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            font-weight: 300;
+        }
+        .total-row td {
+            border-top: 1px solid var(--color-dark);
+            border-bottom: 2px solid var(--color-dark);
+            font-weight: 500 !important;
+            background: rgba(0,0,0,0.01);
+            padding: 1rem 0.8rem;
+        }
+
+        /* SKILL: A4 LANDSCAPE PDF EXPORT OPTIMIZATION */
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 0;
+            }
+            body { 
+                background-color: white !important; 
+            }
+            section {
+                height: 100vh;
+                min-height: 100vh;
+                page-break-after: always !important;
+                break-after: page !important;
+                padding: 2.5rem 8% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                border: none !important;
+            }
+            .no-print, #scroll-progress, nav { display: none !important; }
+            .img-container {
+                max-height: 250px;
+            }
+            .investment-table {
+                font-size: 0.65rem;
+            }
+            h1 { font-size: 2.2rem !important; }
+            h2 { font-size: 1.4rem !important; }
+            .logo-divider { background: rgba(0,0,0,0.1); }
+            .rev-stamp { margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gold z-[1000] no-print" style="width: 0%;"></div>
+
+    <!-- PÁGINA 1: Portada -->
+    <section id="inicio" class="bg-bone">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="logo-lockup hero-logo-lockup">
+                    <img src="https://uploads.onecompiler.io/44apkjp8s/44apkn28k/Circolo%20Logo%20without%20life-09.png" alt="Circolo" class="hero-logo-circolo">
+                    <div class="logo-divider hero-divider"></div>
+                    <img src="https://public.bnbstatic.com/image/pgc/202504/4cd08de502355cbeb8fa04846a913661.png" alt="Binance" class="hero-logo-binance">
+                </div>
+                
+                <span class="block text-[10px] uppercase tracking-[0.5em] text-[#d4af37] mb-6 font-medium">Creating Legacy Experiences</span>
+                
+                <h1 class="text-3xl md:text-5xl leading-tight mb-4 uppercase">BINANCE PIZZA DAY – CIUDAD DE MÉXICO</h1>
+                <h2 class="text-base md:text-lg font-light tracking-[0.4em] text-slate-400 mb-10">Presupuesto General</h2>
+                
+                <div class="border-l border-gold pl-10 mt-10">
+                    <p class="text-[11px] font-medium tracking-widest uppercase mb-1">150 invitados | 3 horas | USD</p>
+                    <p class="rev-stamp mt-10">Rev. 01CC1CIRCOLO24 Emirate of RAK</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="img-container shadow-2xl border border-black/5">
+                    <img src="https://cdn.prod.website-files.com/67ea12a6cb5c87586b4cbec0/69e90d5f2f364fd774b3e3d2_Gemini_Generated_Image_62cz0r62cz0r62cz.png" alt="Binance Pizza Day Visual">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÁGINA 2: Contexto -->
+    <section id="contexto" class="bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="logo-lockup section-logo-lockup">
+                <img src="https://uploads.onecompiler.io/44apkjp8s/44apkn28k/Circolo%20Logo%20without%20life-09.png" alt="Circolo" class="logo-circolo">
+                <div class="logo-divider"></div>
+                <img src="https://public.bnbstatic.com/image/pgc/202504/4cd08de502355cbeb8fa04846a913661.png" alt="Binance" class="logo-binance">
+            </div>
+
+            <h2 class="text-2xl font-light mb-10 border-b border-gold/20 pb-3 inline-block">Contexto</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-6 text-slate-700 font-light text-sm leading-relaxed text-justify">
+                    <p>Circolo es una compañía especializada en el diseño, producción e implementación de experiencias estratégicas para marcas globales, con un enfoque sólido en el ecosistema Web3. Su trabajo se centra en crear entornos donde la interacción, el contenido y la comunidad se integran de manera natural.</p>
+                </div>
+                <div class="space-y-6 text-slate-700 font-light text-sm leading-relaxed text-justify">
+                    <p>Ha desarrollado experiencias en distintos mercados para compañías como Blacklane, Binance en MENA y LATAM, Family Office Network y eventos clave del ecosistema como Token2049, colaborando con actores relevantes de la industria cripto, tecnología y capital.</p>
+                </div>
+            </div>
+            <div class="mt-8 p-8 bg-bone border-l-2 border-gold">
+                <p class="text-sm font-light leading-relaxed">Para Binance Pizza Day en Ciudad de México, se plantea una experiencia diseñada para 150 invitados en un espacio premium, con una identidad visual clara y una ejecución alineada con la dinámica social y cultural del ecosistema Web3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÁGINA 3: Alcance de la experiencia -->
+    <section id="alcance" class="bg-bone">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="logo-lockup section-logo-lockup">
+                <img src="https://uploads.onecompiler.io/44apkjp8s/44apkn28k/Circolo%20Logo%20without%20life-09.png" alt="Circolo" class="logo-circolo">
+                <div class="logo-divider"></div>
+                <img src="https://public.bnbstatic.com/image/pgc/202504/4cd08de502355cbeb8fa04846a913661.png" alt="Binance" class="logo-binance">
+            </div>
+
+            <h2 class="text-2xl font-light mb-10 border-b border-gold/20 pb-3 inline-block uppercase">Alcance de la experiencia</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 font-light text-slate-700 text-sm leading-relaxed">
+                    <p>El evento contempla un espacio premium en la ciudad, acompañado de un sistema técnico adecuado para presentaciones, una propuesta gastronómica centrada en pizza y bebidas, y una capa de branding aplicada en elementos clave de interacción como packaging, photo opportunity y piezas gráficas.</p>
+                </div>
+                <div class="p-10 border border-gold/10 bg-white/50 flex flex-col justify-center">
+                    <p class="text-sm font-light leading-relaxed text-justify uppercase tracking-widest">La experiencia está pensada para desarrollarse de forma dinámica en un formato de 3 horas, facilitando tanto la interacción social como los momentos de contenido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÁGINA 4: Presupuesto -->
+    <section id="presupuesto" class="bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="logo-lockup section-logo-lockup justify-center">
+                <img src="https://uploads.onecompiler.io/44apkjp8s/44apkn28k/Circolo%20Logo%20without%20life-09.png" alt="Circolo" class="logo-circolo">
+                <div class="logo-divider"></div>
+                <img src="https://public.bnbstatic.com/image/pgc/202504/4cd08de502355cbeb8fa04846a913661.png" alt="Binance" class="logo-binance">
+            </div>
+
+            <h2 class="text-2xl font-light mb-8 text-center uppercase tracking-widest">Presupuesto</h2>
+            
+            <div class="overflow-x-auto shadow-sm border border-black/5">
+                <table class="investment-table bg-white">
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Ítem</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario (USD)</th>
+                            <th style="text-align: right;">Total (USD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>CATERING</td><td>Servicio de pizza para invitados</td><td>150 pax</td><td>12</td><td style="text-align: right;">1,800</td></tr>
+                        <tr><td>CATERING</td><td>Bebidas (soft drinks + agua)</td><td>150 pax</td><td>7</td><td style="text-align: right;">1,050</td></tr>
+                        <tr><td>VENUE</td><td>Espacio premium para 150 personas (incluye mobiliario, staff, sonido base y pantallas)</td><td>1</td><td>5,200</td><td style="text-align: right;">5,200</td></tr>
+                        <tr><td>PRODUCCIÓN TÉCNICA</td><td>Pantalla LED 3x2m (incluye montaje y operación)</td><td>1</td><td>1,800</td><td style="text-align: right;">1,800</td></tr>
+                        <tr><td>PRODUCCIÓN TÉCNICA</td><td>Sistema de audio + micrófonos para presentación</td><td>2</td><td>150</td><td style="text-align: right;">300</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Backdrop 4m x 2m para photo opportunity (estructura + impresión)</td><td>1</td><td>1,100</td><td style="text-align: right;">1,100</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Cajas de pizza personalizadas</td><td>80</td><td>3.5</td><td style="text-align: right;">280</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Papel para pizza personalizado (Food grade)</td><td>300</td><td>0.50</td><td style="text-align: right;">150</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Servilletas personalizadas</td><td>300</td><td>0.35</td><td style="text-align: right;">105</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Vasos para llevar personalizados</td><td>300</td><td>1.00</td><td style="text-align: right;">300</td></tr>
+                        <tr><td>MERCH & BRANDING</td><td>Props para fotos (elementos gráficos personalizados)</td><td>20</td><td>18</td><td style="text-align: right;">360</td></tr>
+                        <tr><td>OPERACIÓN</td><td>Producción general, montaje, desmontaje y coordinación del evento</td><td>1</td><td>2,555</td><td style="text-align: right;">2,555</td></tr>
+                        <tr class="total-row"><td colspan="4" style="text-align: right; text-transform: uppercase;">Total Proyecto</td><td style="text-align: right;">15,000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÁGINA 5: Notas -->
+    <section id="conclusion" class="bg-bone">
+        <div class="max-w-4xl mx-auto w-full text-center">
+            <div class="logo-lockup section-logo-lockup justify-center">
+                <img src="https://uploads.onecompiler.io/44apkjp8s/44apkn28k/Circolo%20Logo%20without%20life-09.png" alt="Circolo" class="logo-circolo">
+                <div class="logo-divider"></div>
+                <img src="https://public.bnbstatic.com/image/pgc/202504/4cd08de502355cbeb8fa04846a913661.png" alt="Binance" class="logo-binance">
+            </div>
+
+            <h2 class="text-2xl font-light mb-12 uppercase tracking-widest">Notas</h2>
+            <div class="space-y-12">
+                <div class="grid grid-cols-1 gap-6 text-left font-light text-slate-600 text-[11px] py-10 border-y border-gold/20">
+                    <p>• Los costos están estimados con base en condiciones actuales del mercado en Ciudad de México. El alcance puede ajustarse en función de cambios en producción, volumen o especificaciones finales.</p>
+                    <p>• La propuesta contempla una ejecución alineada con estándares internacionales de marca y experiencia.</p>
+                </div>
+
+                <div class="pt-8 text-center">
+                    <p class="text-xs uppercase tracking-[0.3em] font-medium text-gold mb-2">Curated by Circolo.</p>
+                    <p class="text-[9px] uppercase tracking-[0.3em] opacity-40">The culture layer for creating legacy experiences.</p>
+                    <p class="rev-stamp mt-8">Rev. 01CC1CIRCOLO24 Emirate of RAK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+    </script>
+
+</body>
+</html>
